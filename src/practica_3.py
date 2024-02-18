@@ -3,13 +3,9 @@ def es_factorial(entero,factorial):
         if entero>0 and factorial>0:
             factorizacion=1
             for i in range(1,entero+1):
-                 factorizacion=factorizacion*i
+                factorizacion=factorizacion*i
             if factorizacion==factorial:
-                    return True
-            else:
-                return False
-        else:
-             raise(ValueError)
-                
-    else:
-        raise(TypeError)
+                return True
+            return False
+        raise ValueError("Els numeros tenen que ser positius")
+    raise TypeError("Els numeros tenen que ser enters")
